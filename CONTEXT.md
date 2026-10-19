@@ -72,7 +72,7 @@ history.
 
 ## Design
 
-- **Fonts** (Google Fonts): name in Crimson Pro 900, body in Source Serif 4,
+- **Fonts** (Google Fonts): name in Frank Ruhl Libre 900 (was Crimson Pro 900), body in Source Serif 4,
   labels under the name in Instrument Sans (regular and true italic), section
   headings in Inter 500.
 - **Colours:** links `#2f6b3a`; dark gray `--soft` `#5c5c57` for section
@@ -100,11 +100,13 @@ name", "family name" and "*second* family name :O", and an arrow points to the
 gap between the first and family names, labelled "no middle name ;)".
 
 - Everything is in viewBox units; the name is 88 units tall at baseline `y=96`.
-- Word widths were measured in the browser for Crimson Pro 900 at 88 units and
-  are locked with `textLength`: León 193, Tagle 214.5, Le Blanc 331. If the
+- Word widths were measured in the browser for Frank Ruhl Libre 900 at 88 units
+  and are locked with `textLength`: León 204, Tagle 222, Le Blanc 347.5. (For
+  Crimson Pro they were 193, 214.5, 331; keeping those with a wider font
+  squeezes the letters.) If the
   font or size changes, re-measure with `getComputedTextLength()`.
 - Horizontal layout: 20 side margin, **52** between León and Tagle, **32**
-  between Tagle and Le Blanc. viewBox width is 862.5.
+  between Tagle and Le Blanc. viewBox width is 897.5.
 - Braces are clean geometric paths, not hand-drawn: top at `y=116`, corner
   radius 11 wide by 9 tall. The middle brace is 24 wide with radius 5.5.
 - Labels sit at `y=154` at 17 units, about 12.7px on screen at desktop width.
@@ -113,7 +115,7 @@ gap between the first and family names, labelled "no middle name ;)".
   12.5px and ease to 11px on a phone.
 - "*second*" links to `https://en.wikipedia.org/wiki/Spanish_naming_customs`.
   It keeps the annotation gray and underlines on hover.
-- The SVG's `max-width` (643px) is tied to the viewBox width so the name stays
+- The SVG's `max-width` (669px) is tied to the viewBox width so the name stays
   the same size when spacing changes: `max-width ≈ 0.7455 × viewBox width`.
 
 Spacing tried so far (León–Tagle gap / Tagle–Le Blanc gap): 78 / 40 too loose;
