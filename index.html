@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>León Tagle Le Blanc</title>
+<meta name="description" content="León Tagle Le Blanc, predoctoral research fellow at the Stanford Institute for Economic Policy Research (SIEPR).">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@900&family=Instrument+Sans:ital,wght@0,400;1,400&family=Inter:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+  :root {
+    --ink: #1c1c1a;
+    --soft: #5c5c57;
+    --rule: #e4e2da;
+    --link: #2f6b3a;
+    --page: #ffffff;
+    --annot: #c9c9c9;
+    --serif: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+    --sans: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--page);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 56px 24px 72px;
+  }
+  h1 {
+    margin: 0 0 36px;
+    font-size: 1em;
+    line-height: 0;
+  }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .nameplate {
+    display: block;
+    width: 100%;
+    max-width: 643px;
+    height: auto;
+    margin: 0 auto;
+    font-family: "Instrument Sans", var(--sans);
+  }
+  .nameplate .name {
+    font-family: "Crimson Pro", var(--serif);
+    font-size: 88px;
+    font-weight: 900;
+    fill: #000;
+  }
+  .nameplate .label {
+    font-size: 17px;
+    font-weight: 400;
+    fill: var(--annot);
+  }
+  .nameplate path {
+    fill: none;
+    stroke: var(--annot);
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    vector-effect: non-scaling-stroke;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 285px;
+    gap: 48px;
+    align-items: start;
+  }
+  .card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 4.7;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  p { margin: 0 0 1em; }
+  a {
+    color: var(--link);
+    text-decoration: none;
+  }
+  a:hover, a:focus-visible { text-decoration: underline; }
+  .placeholder { color: var(--link); }
+  h2 {
+    margin: 24px 0 14px;
+    padding-top: 17px;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--soft);
+  }
+  ul.works {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  ul.works li { margin: 0 0 0.9em; }
+  .title {
+    display: block;
+    font-size: 15.5px;
+    font-weight: 600;
+  }
+  .note {
+    display: block;
+    color: var(--soft);
+    font-size: 15.5px;
+  }
+  .abstract {
+    font-size: 15.5px;
+  }
+  .abstract summary {
+    width: fit-content;
+    color: var(--soft);
+    cursor: pointer;
+  }
+  .abstract summary:hover, .abstract summary:focus-visible { color: var(--ink); }
+  .abstract p {
+    margin: 0.3em 0 0.4em 16px;
+    font-size: 14.5px;
+    line-height: 1.5;
+  }
+  .email { color: var(--soft); }
+  footer {
+    margin-top: 40px;
+    padding-top: 16px;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 12.5px;
+    color: var(--soft);
+  }
+  @media (max-width: 680px) {
+    main { padding: 36px 20px 56px; }
+    h1 { margin-bottom: 24px; }
+    .nameplate .label {
+      font-size: clamp(17px, calc(17px + (680px - 100vw) * 0.036), 28px);
+      transform: translateY(clamp(0px, calc((680px - 100vw) * 0.026), 8px));
+    }
+    .nameplate .label.aside { transform: translateY(clamp(0px, calc((680px - 100vw) * 0.0098), 3px)); }
+    .card { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+    .card figure { order: -1; max-width: 228px; margin: 0 auto; }
+  }
+  figure { margin: 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>
+    <span class="sr-only">León Tagle Le Blanc</span>
+    <svg class="nameplate" viewBox="0 24 862.5 202" aria-hidden="true">
+      <text class="name" x="20" y="96" textLength="193" lengthAdjust="spacing">León</text>
+      <text class="name" x="265" y="96" textLength="214.5" lengthAdjust="spacing">Tagle</text>
+      <text class="name" x="511.5" y="96" textLength="331" lengthAdjust="spacing">Le Blanc</text>
+
+      <path d="M20,116 Q20,125 31,125 L105.5,125 Q116.5,125 116.5,134 Q116.5,125 127.5,125 L202,125 Q213,125 213,116"/>
+      <path d="M227,116 Q227,125 232.5,125 L233.5,125 Q239,125 239,134 Q239,125 244.5,125 L245.5,125 Q251,125 251,116"/>
+      <path d="M265,116 Q265,125 276,125 L361.2,125 Q372.2,125 372.2,134 Q372.2,125 383.2,125 L468.5,125 Q479.5,125 479.5,116"/>
+      <path d="M511.5,116 Q511.5,125 522.5,125 L666,125 Q677,125 677,134 Q677,125 688,125 L831.5,125 Q842.5,125 842.5,116"/>
+      <path d="M271,200 Q239,200 239,144"/>
+      <path d="M233,154 L239,143 L245,154"/>
+
+      <text class="label" x="116.5" y="154" text-anchor="middle">first name</text>
+      <text class="label" x="372.3" y="154" text-anchor="middle">family name</text>
+      <text class="label" x="677" y="154" text-anchor="middle"><a href="https://en.wikipedia.org/wiki/Spanish_naming_customs"><tspan font-style="italic">second</tspan></a> family name :O</text>
+      <text class="label aside" x="281" y="200" dominant-baseline="central">no middle name ;)</text>
+    </svg>
+  </h1>
+
+  <div class="card">
+    <div>
+      <p>I am a predoctoral research fellow at the Stanford Institute for Economic Policy Research (SIEPR), working with Professor <a href="https://sites.google.com/site/ignaciocuesta/">José Ignacio Cuesta</a>.</p>
+
+      <p>My research interests are in industrial organization and labor economics, with a focus on the empirics of technological change, growth and industry dynamics. I hold a B.A. and M.A. in Economics from the Pontificia Universidad Católica de Chile.</p>
+
+      <p>You can find my <a href="cv/CV.pdf">CV here</a>.</p>
+
+      <p>Contact: <span class="email">leontl [<em>at</em>] stanford [<em>dot</em>] edu</span></p>
+
+      <h2>Works in Progress</h2>
+      <ul class="works">
+        <li>
+          <span class="title">The Effects of Initial Placement: Evidence from Economics Job Market Flyouts</span>
+          <span class="note">with <a href="https://siepr.stanford.edu/people/caleb-brobst">Caleb Brobst</a> <a href="slides/flyouts.pdf">[slides]</a></span>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>We study the effect of a good initial placement in the economics job market on candidates’ medium run publication productivity. To isolate causality from selection, we employ two strategies: within-flyout list comparisons in specifications of increasing stringency (as in Greenstone, Hornbeck, and Moretti, 2010), and in the future, quasi-random variation in job postings by field. We currently find a ~30% increase in cumulative 10-year output. Drawing on granular data on flyouts, placement lists, faculty roster snapshots, and individual candidates’ personal websites and résumés, we will explore the mechanisms which account for the success of top institutions.</p>
+          </details>
+        </li>
+        <li>
+          <span class="title">Does Worker Mobility Mediate Knowledge Spillovers?</span>
+          <span class="note"><a href="slides/spillovers.pdf">[slides]</a></span>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>I put to the test the common assumption of knowledge diffusion through <em>encounters</em> between agents. Drawing on granular geo-located data from Revelio Labs on millions of R&amp;D workers in the U.S., I examine and horserace two different channels through which these encounters may occur: physical proximity of workers in separate firms, and the mobility of workers between firms. I model worker mobility between establishments as gravity, as in the trade literature, to capture persistent establishment traits driving inflows and outflows. Work in progress.</p>
+          </details>
+        </li>
+      </ul>
+
+      <h2>Other Writings</h2>
+      <ul class="works">
+        <li>
+          <span class="title">Search and Competition in the Market for Sick Leaves</span>
+          <span class="note">Master’s thesis, 2024. Advisors: Nicolás Figueroa and Pablo Celhay. <span class="placeholder">[updated version]</span> <a href="https://repositorio.uc.cl/handle/11534/89611">[original]</a></span>
+          <details class="abstract">
+            <summary>Abstract</summary>
+            <p>I develop and estimate a model of the market for medical treatment and sick leave, in which patients search imperfectly across physicians who differ in quality and choose how leniently to issue sick leave. Competition for patients leads lower-quality physicians to relax their issuance threshold, producing assortative matching between “dishonest” physicians and patients. I calibrate the model using data from Chile’s national public insurer. In a counterfactual, a 64% increase in the fine for issuing sick leave reduces aggregate sick leaves by 32%, concentrated on the patients with the least medical need.</p>
+          </details>
+        </li>
+      </ul>
+
+    </div>
+
+    <figure>
+      <img src="picture/profile-web.jpg" alt="Portrait of León Tagle Le Blanc" width="960" height="1200">
+    </figure>
+  </div>
+
+  <footer>© 2026 León Tagle Le Blanc</footer>
+</main>
+</body>
+</html>
