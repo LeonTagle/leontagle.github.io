@@ -30,7 +30,7 @@
     line-height: 1.6;
   }
   main {
-    max-width: 860px;
+    max-width: 826px;
     margin: 0 auto;
     padding: 56px 24px 72px;
   }
@@ -94,7 +94,6 @@
     text-decoration: none;
   }
   a:hover, a:focus-visible { text-decoration: underline; }
-  .placeholder { color: var(--link); }
   h2 {
     margin: 24px 0 14px;
     padding-top: 17px;
@@ -126,10 +125,25 @@
     font-size: 15.5px;
   }
   .abstract summary {
+    position: relative;
     width: fit-content;
+    padding-left: 16px;
+    list-style: none;
     color: var(--soft);
     cursor: pointer;
   }
+  .abstract summary::-webkit-details-marker { display: none; }
+  .abstract summary::before {
+    content: "";
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    border-style: solid;
+    border-width: 4.5px 0 4.5px 7px;
+    border-color: transparent transparent transparent currentColor;
+    transform: translateY(-50%);
+  }
+  .abstract[open] summary::before { transform: translateY(-50%) rotate(90deg); }
   .abstract summary:hover, .abstract summary:focus-visible { color: var(--ink); }
   .abstract p {
     margin: 0.3em 0 0.4em 16px;
@@ -216,7 +230,7 @@
       <ul class="works">
         <li>
           <span class="title">Search and Competition in the Market for Sick Leaves</span>
-          <span class="note">Master’s thesis, 2024. Advisors: Nicolás Figueroa and Pablo Celhay. <span class="placeholder">[updated version]</span> <a href="references/references.pdf">[references]</a> <a href="https://repositorio.uc.cl/handle/11534/89611">[original]</a></span>
+          <span class="note">Master’s thesis, 2024. Advisors: Nicolás Figueroa and Pablo Celhay. <a href="updated/updated_thesis.pdf">[updated version]</a> <a href="references/references.pdf">[references]</a> <a href="https://repositorio.uc.cl/handle/11534/89611">[original]</a></span>
           <details class="abstract">
             <summary>Abstract</summary>
             <p>I develop and estimate a model of the market for medical treatment and sick leave, in which patients search imperfectly across physicians who differ in quality and choose how leniently to issue sick leave. Competition for patients leads lower-quality physicians to relax their issuance threshold, producing assortative matching between “dishonest” physicians and patients. I calibrate the model using data from Chile’s national public insurer. In a counterfactual, a 64% increase in the fine for issuing sick leave reduces aggregate sick leaves by 32%, concentrated on the patients with the least medical need.</p>
